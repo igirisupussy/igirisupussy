@@ -1,26 +1,44 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>豆芽blabla漢化組</title>
+		<title>豆芽養殖基地</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
 
+		
+		<style type="text/css">
+			#myBtn {
+				height: 68px;
+				width: 120px;
+				display: none; /* Hidden by default */
+				position: fixed; /* Fixed/sticky position */
+				bottom: 20px; /* Place the button at the bottom of the page */
+				right: 30px; /* Place the button 30px from the right */
+				z-index: 99; /* Make sure it does not overlap */
+				border: none; /* Remove borders */
+				outline: none; /* Remove outline */
+				background-color: red; /* Set a background color */
+				color: white; /* Text color */
+				cursor: pointer; /* Add a mouse pointer on hover */
+				padding: 15px; /* Some padding */
+				border-radius: 10px; /* Rounded corners */
+				font-size: 18px; /* Increase font size */
+			}
+		</style>
+	
+
+	<body class="is-preload">
+		<button onclick="topFunction()" id="myBtn" title="Go to top" style="background: url(images/robot.gif)"></button>
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1>
-						<p><strong>寫Title的地方</strong></p>
+						<p><strong>豆芽養殖基地</strong></p>
 						<p>隨便寫點什麼</p>
-						<p>下面的icon可以換看要連哪裡</p>
+						<p>下面的icon可以換看要連weibo/lofter/sw.</p>
 					</h1>
 				</div>
 			</header>
@@ -31,11 +49,17 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>我是Acknowledge</h2>
+							<h2>在阅读汉化前请你和我们做个约定</h2>
 						</header>
-						<p>可以寫點規則blablabla</p>
+						<ul>
+						<li>本汉化组为英右相关汉化组，请不要在留言处撰写逆位相关信息。洁癖cp粉也禁止在留言中踩一贬一等行为。</li>
+						<li>本汉化组为无盈利向汉化组，纯为爱发电，不接受任何捐赠。也绝对<strong>禁止任何贩卖汉化组产出资源的行为。</strong></li>							
+						<li>为保障原作者权益，<strong>若原刊仍在售卖，那么获取汉化资源即默认你购买过生肉资源</strong>。对于已停售或是已web再录的同人本，提供公开阅览。</li>							
+						<li>汉化组已发布的<strong>非公开阅览</strong>（即近期仍在售的同人本，站内会有密码保护）汉化作品禁止二次传播，仅用于同好交流。<strong>不可将需要密码保护的汉化作品截图打包发给亲友、或是在公众平台讨论或是询问密码都属于二次传播的范畴。</strong></li>
+						<li>请切记，汉化组没有任何为你汉化的责任，<strong>如有任何违反上述约定与因汉化事宜辱骂本组及成员的行为，一旦被发现并累积到一定次数，本站将关闭并删除所有汉化资源</strong>。如果你试图去这样做，你的名字和行为将来可能会被放在这里，我们将用来解释关站的原因，而你的ip会被我们永久封禁。</li>
+						</ul>
 						<ul class="actions">
-							<li><a href="#" class="button">可以自訂動作，例如彈窗、關頁面、跳到別的頁面等</a></li>
+							<li><a href="#two" class="button primary">我已知悉，点我进入资源发布页面</a></li>
 						</ul>
 					</section>
 
@@ -44,9 +68,10 @@
 						<h2>Gallery</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>本1</h3>
-								<p>Description</p>
+								<a href="fansbooks/01_porteng_angel" class="image fit thumb"><img src="images/thumbs/01_porteng_angel.jpg" alt="" /></a>
+								<h3>【永盟萬載漢化組】親愛的可愛天使</h3>
+								<p>CP: 葡英</p>
+								<p>作者: CHI-RON</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
@@ -453,6 +478,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
+		<script>
+		// Get the button:
+	let mybutton = document.getElementById("myBtn");
+	let audio1 = new Audio('audio/audio1.mp3');
+	let audio2 = new Audio('audio/audio2.mp3');
+    mybutton.style.display = "block";
+	function topFunction() {
+        let plat_num = Math.floor(Math.random() * 2);
+        let audios = [audio1, audio2];
+        audios[plat_num].play();
+    }
+
+	</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
